@@ -3,7 +3,7 @@
 The controller.adb file was submitted as part of my final year Embedded Systems module.
 
 This should be ran on Linux, using the following command:
-'./hwsim --controller controller output --time 1800 --random'
+`./hwsim --controller controller output --time 1800 --random`
 
 <dl>
   <dt>Important Note</dt>

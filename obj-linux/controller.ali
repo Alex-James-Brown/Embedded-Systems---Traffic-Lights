@@ -1,0 +1,110 @@
+V "GNAT Lib v2012"
+M P W=b
+A -O2
+A -Werror=format-security
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -gnatA
+P ZX
+R nnnnnnnnnvvnnnnnnnnnnnnvnnnnnnnnnnnnnnnvnnnnvnnnnvnvnnnnnnvnnnnvnnnnnnvnnnnnnnv1+nnnnnn
+
+U controller%b		controller.adb		0e03bf95 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W hwif%s		hwif.ads		hwif.ali
+W hwif_types%s		hwif_types.ads		hwif_types.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20120510125803 3ffc8e18
+D a-calend.ads		20120510125748 d86d6c8c
+D a-caldel.ads		20120510125748 9f20b83d
+D a-except.ads		20120510125752 ec1b44c1
+D a-reatim.ads		20120510125755 63f07669
+D a-retide.ads		20120510125755 081cdaa4
+D a-unccon.ads		20120510125801 f9eb8f06
+D controller.adb	20170407150541 844acf51
+D hwif.ads		20170310132508 e3b3d640
+D hwif_types.ads	20170118192015 0a0ad0ed
+D interfac.ads		20120510125815 129923ea
+D i-c.ads		20120510125814 5421119b
+D mmap.ads		20170117173909 d61c1607
+D system.ads		20120510125846 eb6e42ba
+D s-atacco.ads		20120510125819 4c36d12f
+D s-exctab.ads		20120510125824 66e51330
+D s-linux.ads		20120510125827 70c7cb45
+D s-multip.ads		20120510125828 38ac9f73
+D s-oscons.ads		20120511153426 9012934c
+D s-osinte.ads		20120510125829 938b6b03
+D s-parame.ads		20120510125832 b6e20cc0
+D s-soflin.ads		20120510125833 24c8153c
+D s-stache.ads		20120510125834 596fc1b4
+D s-stausa.ads		20120510125834 017a0a05
+D s-stalib.ads		20120510125834 f78bcf95
+D s-stoele.ads		20120510125834 facd7d98
+D s-stoele.adb		20120510125834 afc5dc80
+D s-tasinf.ads		20120510125835 21316953
+D s-taspri.ads		20120510125836 15f617a8
+D s-taprop.ads		20120510125835 1dd2e1b6
+D s-taskin.ads		20120510125836 5e24fb30
+D s-tassta.ads		20120510125836 3a253871
+D s-traent.ads		20120510125838 5221ee41
+D s-unstyp.ads		20120510125838 6ae15c76
+X 1 ada.ads
+16K9*Ada 19e8 8|3r6 3r25
+X 5 a-reatim.ads
+39K13*Real_Time 139e18 8|3w10 3r29
+41O9*Time 8|6r107 7r22 51r16
+46O9*Time_Span
+53V13*Clock{41O9} 8|20s29 57s44 61s44 65s44 73s42 77s42 81s42 91s26
+55V14*"+"{41O9} 8|20s35 22s40 26s37 91s32
+87V13*Seconds{46O9} 8|20s37 22s42 26s39 91s34
+X 8 controller.adb
+5U11*Controller 5b11 109l5 109t15
+6U14 Delay_Traffic_Light 6b14 6>35 6>58 6>76 6>94 30l8 30t27 57s7 61s7 65s7
+. 73s7 77s7 81s7
+6i35 Light_Color{integer} 9r10 24r13 24r32
+6e58 Dir1{9|17E9} 11r38 14r44
+6e76 Dir2{9|17E9} 12r37 15r40
+6o94 Start_Time{5|41O9} 22r29 26r26
+7o7 Release_Time{5|41O9} 20m13 22m13 26m10 29r19
+32t9 Button_Pressed 33b14 49l8 49t22
+35l7 Task_Loop 48l16 48e25
+51o1 Release_Time{5|41O9} 91m10 101r22
+X 9 hwif.ads
+8K9*HWIF 8|1w6 1r16 9|50e9
+17E9*Direction 8|6r65 6r83 9|17e48
+17n23*North{17E9} 8|37r32 37r64 37r96 42r29 55r21 57r30 59r21 61r30 63r21
+. 65r30 67r21 86r26 92r27 97r26 103r27
+17n30*South{17E9} 8|39r31 39r63 39r95 44r29 56r21 57r37 60r21 61r37 64r21
+. 65r37 68r21 88r25 94r27 99r26 105r27
+17n37*East{17E9} 8|38r31 38r62 38r93 43r29 71r21 73r30 75r21 77r30 79r21
+. 81r30 83r21 87r25 93r27 98r26 104r27
+17n43*West{17E9} 8|40r31 40r62 40r93 45r29 72r21 73r36 76r21 77r36 80r21
+. 81r36 84r21 89r25 95r27 100r26 106r27
+18A9*Direction_Octet(10|7M9)<17E9>
+23a4*Traffic_Light{18A9} 8|55m7 56m7 59m7 60m7 63m7 64m7 67m7 68m7 71m7 72m7
+. 75m7 76m7 79m7 80m7 83m7 84m7
+29a4*Pedestrian_Light{18A9} 8|37r47 38r45 39r46 40r45 92m10 93m10 94m10 95m10
+. 103m10 104m10 105m10 106m10
+35a4*Pedestrian_Wait{18A9} 8|37r80 38r77 39r79 40r77 42m13 43m13 44m13 45m13
+. 86r10 87r9 88r9 89r9 97m10 98m10 99m10 100m10
+41a4*Pedestrian_Button{18A9} 8|37r14 38r13 39r13 40r13
+47a4*Emergency_Vehicle_Sensor{18A9} 8|11r13 12r12 14r19 15r15
+X 10 hwif_types.ads
+3K9*HWIF_Types 8|2w6 2r22 10|12e15
+7M9*Octet<11|55M9>
+X 11 interfac.ads
+55M9*Unsigned_8
+

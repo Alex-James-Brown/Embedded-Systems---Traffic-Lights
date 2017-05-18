@@ -1,0 +1,34 @@
+V "GNAT Lib v2012"
+A -O2
+A -Werror=format-security
+A -gnatA
+A -g
+A -gnata
+A -gnato
+A -gnatwa
+A -gnatVa
+A -gnat12
+A -mtune=generic
+A -march=x86-64
+P ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U mmap%b		mmap.adb		b9c3fe82 NE OO PK
+
+U mmap%s		mmap.ads		3d7254bd EE NE OO PK
+W system%s		system.ads		system.ali
+
+D mmap.ads		20170117173909 d61c1607
+D mmap.adb		20170118205515 6fdfe885
+D system.ads		20120510125846 eb6e42ba
+X 1 mmap.ads
+3K9*MMap 9l5 9e9 2|1b14 20l5 20t9
+5V13*Get_MMAP_RW{3|64M9} 2|10b13 13l8 13t19
+7U14*Close_MMAP 2|8r24 15b14 18l8 18t18
+X 2 mmap.adb
+3V13 Get_MMAP_RW_Actual{3|64M9} 4b<c,get_mmap_rw>21 12s14
+6U14 Close_MMAP_Actual 7b<c,close_mmap>21 17s7
+X 3 system.ads
+37K9*System 1|1w6 5r32 2|3r39 10r32 3|151e11
+64M9*Address 1|5r39 2|3r46 10r39
+
